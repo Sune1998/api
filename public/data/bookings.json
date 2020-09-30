@@ -1,0 +1,22 @@
+{
+      "booking1" :  {
+            "date": "22-09-2020",
+            "time": "13:00",
+            "user": "user1",
+            "car": "car1"
+        },
+
+        "booking2" :{
+            "date": "23-09-2020",
+            "time": "14:00",
+            "user": "user2",
+            "car": "car2"
+        },
+
+        "booking3" :{
+            "date": "23-09-2020",
+            "time": "15:00",
+            "user": "user3",
+            "car": "car3" }
+        }
+        

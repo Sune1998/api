@@ -1,0 +1,68 @@
+{
+    "cars": [
+        {
+            "name": "Mclaren",
+            "color": "red",
+            "type": "hypercar"
+        },
+        {
+            "name": "Ferrai",
+            "color": "blue",
+            "type": "sportssedan"
+        },
+        {
+            "name": "Saleem",
+            "color": "red",
+            "type": "sportscar"
+        },
+        {
+            "name": "P1",
+            "color": "red",
+            "type": "hypercar"
+        },
+        {
+            "name": "P2",
+            "color": "blue",
+            "type": "sportssedan"
+        },
+        {
+            "name": "P1",
+            "color": "red",
+            "type": "hypercar"
+        }
+    ],
+    "brugere": [
+        {
+            "name": "Alex",
+            "gender": "enby"
+        },
+        {
+            "name": "Liv",
+            "gender": "female"
+        },
+        {
+            "name": "joe",
+            "gender": "male"
+        }
+    ],
+    "bookings": [
+        {
+            "date": "22-09-2020",
+            "time": "13:00",
+            "user": "user1",
+            "car": "car1"
+        },
+        {
+            "date": "23-09-2020",
+            "time": "14:00",
+            "user": "user2",
+            "car": "car2"
+        },
+        {
+            "date": "23-09-2020",
+            "time": "15:00",
+            "user": "user3",
+            "car": "car3"
+        }
+    ]
+}

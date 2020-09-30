@@ -1,0 +1,20 @@
+{
+    "car1": 
+        {
+            "name": "Mclaren",
+            "color": "red",
+            "type": "hypercar"
+        },
+
+        "car2" :{
+            "name": "Ferrai",
+            "color": "blue",
+            "type": "sportssedan"
+        },
+
+        "car3" :{
+            "name": "Saleem",
+            "color": "red",
+            "type": "sportscar"
+        }
+    }

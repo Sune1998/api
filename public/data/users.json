@@ -1,0 +1,14 @@
+{
+    "user1" :{
+        "name": "Alex",
+        "gender": "enby"
+    },
+    "user2":{
+        "name": "Liv",
+        "gender": "female"
+    },
+    "user" :{
+        "name": "joe",
+        "gender": "male"
+    }
+}

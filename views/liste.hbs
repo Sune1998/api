@@ -1,0 +1,64 @@
+<select id="myselect" onchange="change_myselect(this.value)">
+<option value=""> Choose an option:</option>
+<option value="cars">Cars</option>
+<option value="users">users</option>
+<option value="bookings">bookings</option>
+</select>
+
+<p id ="demo"></p>
+
+<script>
+    function change_myselect(sel){
+    var obj, dbpram, xmlhttp, myObj, x, txt="";
+    obj = {table: sel, limit 20}
+    dbpram = JSON.stringify(obj)
+    xmlhttp = new XMLHttpRequest()
+
+    xmlhttp.onreadystatechange = function(){
+        if (this.readyState ==4 && this.status == 200 || this.status == 304){
+            myObj = JSON.parse(this.responseText)
+
+            for (i = 0; i < myObj[sel].length; i++){
+                if(sel === "cars"){
+                    txt += "<table border='1'>"
+
+                    let element = myObj[sel][i]
+                    text += "<tr><td>Name</td><td>" + element.name + "</td></tr>"
+                    text += "<tr><td>Color</td><td>" + element.color + "</td></tr>
+                    text += "<tr><td>Type</td><td>" + element.type + "</td></tr>
+
+                    txt += "</table><br>"
+                }
+            if(sel === "users"){
+                    txt += "<table border='1'>"
+
+                    let element = myObj[sel][i]
+                    text += "<tr><td>Name</td><td>" + element.name + "</td></tr>"
+                    text += "<tr><td>Gender</td><td>" + element.gender + "</td></tr>
+
+                    txt += "</table><br>"
+                }
+            
+            if(sel === "bookings"){
+                    txt += "<table border='1'>"
+
+                    let element = myObj[sel][i]
+                    text += "<tr><td>Date</td><td>" + element.date + "</td></tr>"
+                    text += "<tr><td>Time</td><td>" + element.time + "</td></tr>
+                    text += "<tr><td>User</td><td>" + element.user + "</td></tr>
+                    text += "<tr><td>Car</td><td>" + element.car + "</td></tr>
+
+                    txt += "</table><br>"
+                }
+
+            }
+            
+            document.getElementById("demo").innerHTML = txt
+        }
+
+    }
+    xmlhttp.open("GET", "/data/combined.json", true)
+    xmlhttp.setRequestHeader("Content-type", "application/json")
+    xmlhttp.send("x=" + dbpram)
+    }
+</script>
